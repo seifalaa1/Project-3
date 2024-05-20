@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0062be;
+    transition: 0.5s;
+}
+
+section .header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    
+}
+.header .logo {
+    position: absolute;
+    max-width: 80px;
+}
+.header ul{
+    position: relative;
+    display: flex;
+}
+.header ul li{
+    list-style: none;
+    position: relative;
+}
+.header ul li::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: #fff;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+.header ul li:hover::after{
+    width: 100%;
+}
+.header ul li a{
+    text-align: center;
+    display: inline-block;
+    padding: 0 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+.content{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+}
+.content .text{
+    position: relative;
+    max-width: 600px;   
+    
+}
+.content .text h2{
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.content .text h2 span{
+    font-size: 2em;
+}
+.content .text p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 25px;
+}
+.content .text a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+.content .image{
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+.content .image img{
+    max-width: 240px;
+}
+.product
+{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;    
+}
+.product li{
+    padding: 0 20px;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    transition: 0.3s;
+}
+.product li:hover{
+    transform: translateY(-15%);
+}
+.product li img{
+    max-width: 40px;
+}
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    flex-direction: column;
+    cursor: pointer;
+}
+.sci li{
+    list-style: none;
+    margin: 10px 0;
+    filter: invert(1)
+}
+.sci li a{
+    transform: scale(0.6);
+}
